@@ -20,15 +20,15 @@ using namespace std;
 int CardChange(int CardNum)
 {
 	int rank = CardNum % 13;
-		if (rank == 0)
+		if (rank == 0) //첫번쨰 카드
 		{
 			return 1;
 		}
-		if (rank >=10)
+		if (rank >=10)//나머지 J,Q,R
 		{
 			return 10;
 		}
-		return rank + 1;
+		return rank + 1; //1~9숫자
 
 }
 
@@ -55,7 +55,7 @@ int main()
 
 	cout << "게임시작" << endl;
 
-	cout << "플레이어 카드: " << endl;
+	cout << "플레이어 카드:";
 
 	//플레이어 3장
 	//이중for문은 복잡해서 사용하지 말기
